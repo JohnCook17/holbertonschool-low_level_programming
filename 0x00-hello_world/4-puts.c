@@ -2,7 +2,12 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * main
+ * main - The main function
+ * @void: void
+ *
+ * Description: main is where all the code is called.
+ * section header: prints the text.
+ * Return: returns 0 as instructed.
  */
 int main(void)
 {
@@ -11,8 +16,6 @@ int main(void)
 	strcpy(str, "\"Programming is like building a multilingual puzzle");
 
 	puts(str);
-/**
- * returns 0 cause it does almost nothing
- */
+
 	return (0);
 }
