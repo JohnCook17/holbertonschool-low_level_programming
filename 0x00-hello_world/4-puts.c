@@ -9,5 +9,5 @@ int main(void)
 
 	puts(str);
 
-	return(0);
+	return (0);
 }
