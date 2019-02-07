@@ -1,23 +1,37 @@
 #include <stdio.h>
 
 /**
- * main - prints 1, 2, 3,...
+ * main - A program to print alpha
  * @void: void
  *
- * Description: prints 1,2,3,4,5,6,7,8,9
- * section header: stdio.h
+ * Description: A program to print the alphabet
+ * section header: stdio
  * Return: returns 0
  */
+
 int main(void)
 {
+
+	char *alpha;
 	int i;
 
+	alpha = "0123456789";
 	i = 0;
 
-	while(i != 10)
+	while (i != 10)
 	{
-		putchar(i",");
-		i++;
+		putchar(alpha[i]);
+		if (i == 9)
+		{
+			putchar('\n');
+			break;
+		}
+		else
+		{
+			putchar(44);
+			i++;
+		}
 	}
-	return(0);
+
+	return (0);
 }
