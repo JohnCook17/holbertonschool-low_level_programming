@@ -15,10 +15,10 @@ int main(void)
 	char *alpha;
 	int i;
 
-	alpha = "0123456789abcdef\n";
+	alpha = "abcdefghijklmnopqrstuvwxyz\n";
 	i = 0;
 
-	while (i != 17)
+	while (i != 27)
 	{
 		putchar(alpha[i]);
 		i++;
