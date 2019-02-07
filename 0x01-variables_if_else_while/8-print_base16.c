@@ -15,7 +15,7 @@ int main(void)
 	char *alpha;
 	int i;
 
-	alpha = "abcdefghijklmnopqrstuvwxyz\n";
+	alpha = "0123456789abcdef\n";
 	i = 0;
 
 	while (i != 27)
