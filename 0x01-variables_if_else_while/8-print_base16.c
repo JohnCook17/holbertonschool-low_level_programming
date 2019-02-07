@@ -18,7 +18,7 @@ int main(void)
 	alpha = "0123456789abcdef\n";
 	i = 0;
 
-	while (i != 27)
+	while (i != 17)
 	{
 		putchar(alpha[i]);
 		i++;
