@@ -16,7 +16,7 @@ int main(void)
 	char *caps;
 	int i;
 
-	alpha = "abcdefghijklmnopqrstuvwxyz\n";
+	alpha = "abcdefghijklmnopqrstuvwxyz";
 	caps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 	i = 0;
 
