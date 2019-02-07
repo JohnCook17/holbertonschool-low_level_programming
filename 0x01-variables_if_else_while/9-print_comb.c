@@ -15,22 +15,13 @@ int main(void)
 	char *alpha;
 	int i;
 
-	alpha = "0123456789";
+	alpha = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9$\n";
 	i = 0;
 
-	while (i != 10)
+	while (i != 30)
 	{
 		putchar(alpha[i]);
-		if (i == 9)
-		{
-			putchar('\n');
-			break;
-		}
-		else
-		{
-			putchar(44);
-			i++;
-		}
+		i++;
 	}
 
 	return (0);
