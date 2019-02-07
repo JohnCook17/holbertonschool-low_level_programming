@@ -15,7 +15,7 @@ int main(void)
 	char *alpha;
 	int i;
 
-	alpha = "zxywvutsrqponmlkjihgfedcba\n";
+	alpha = "zyxwvutsrqponmlkjihgfedcba\n";
 	i = 0;
 
 	while (i != 27)
