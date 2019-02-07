@@ -20,12 +20,16 @@ int main(void)
 	caps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
 	i = 0;
 
-	while (i != 27)
+	while (i != 26)
 	{
 		putchar(alpha[i]);
+		i++;
+	}
+	i = 0;
+	while (i != 27)
+	{
 		putchar(caps[i]);
 		i++;
 	}
-
 	return (0);
 }
