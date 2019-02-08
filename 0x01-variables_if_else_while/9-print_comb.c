@@ -12,15 +12,22 @@
 int main(void)
 {
 
-	char *alpha;
 	int i;
 
-	alpha = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9$\n";
-	i = 0;
+	i = 48;
 
-	while (i != 30)
+	while (i != 58)
 	{
-		putchar(alpha[i]);
+		putchar(i);
+		if (i != 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
+		else
+		{
+			putchar('\n');
+		}
 		i++;
 	}
 
