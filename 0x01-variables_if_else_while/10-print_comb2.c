@@ -32,7 +32,7 @@ int main(void)
 			}
 			i++;
 		}
-		if (i = 57)
+		if (i > 56)
 		{
 			i = 48;
 		}
