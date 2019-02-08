@@ -25,7 +25,7 @@ int main(void)
 		{
 			putchar(n);
 			putchar(i);
-			if (n > 56 && i >56)
+			if (n > 56 && i > 56)
 			{
 				break;
 			}
