@@ -9,10 +9,10 @@
  */
 int main(void)
 {
-	char *str;
+	char *i;
 
-	str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	fwrite(str, sizeof(str), 10, stderr);
+	i = "and that piece of art is useful\" -Dora Korpar, 2015-10-19\n";
+	fprintf(stderr, "%s", i);
 
 	return (1);
 }
