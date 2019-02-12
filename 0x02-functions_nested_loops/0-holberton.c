@@ -14,7 +14,7 @@ int main(void)
 	int i;
 
 	p = "Holberton\n";
-	for (i = 0; i <= 10; i++)
+	for (i = 0; i < 11; i++)
 	{
 		_putchar(p[i]);
 	}
