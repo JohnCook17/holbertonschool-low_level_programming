@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-/*
+/**
  * main - main function, calls _putchar form holberton.h
  * @void: void
  *
