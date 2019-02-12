@@ -1,3 +1,4 @@
+#include "holberton.h"
 /**
  * print_alphabet - function to print alphabet
  *
@@ -9,7 +10,7 @@ void print_alphabet(void)
 	int i;
 
 	p = "abcdefghijklmnopqrstuvwxyz\n";
-	for (i = 0; i <= 27; i++)
+	for (i = 0; i < 27; i++)
 	{
 		_putchar(p[i]);
 	}
