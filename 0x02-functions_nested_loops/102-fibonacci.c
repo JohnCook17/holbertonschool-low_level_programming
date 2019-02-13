@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * main - prints fibonacci numbers up to 50
+ *
+ * Description: prints fibonacci numbers 1 - 50
+ * Return: returns 0
+ */
 int main(void)
 {
 	int i;
@@ -7,13 +12,13 @@ int main(void)
 	long int n2;
 	unsigned long long int res;
 
-	for (i = 0, n1 = 0, n2 = 1; i < 50; i++)
+	for (i = 0, n1 = 0, n2 = 1; i <= 50; i++)
 	{
 		res = n1 + n2;
 		n1 = n2;
 		n2 = res;
 		printf("%llu", res);
-		if (i < 49)
+		if (i < 50)
 		{
 			printf(", ");
 		}
