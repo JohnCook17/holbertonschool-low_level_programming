@@ -19,23 +19,26 @@ void times_table(void)
 		tens = res / 10;
 		if (tens != 0)
 		{
+			if (v != 0)
+			{
+				_putchar(' ');
+			}
 			_putchar('0' + tens);
 			_putchar('0' + ones);
 			if (v != 9)
 			{
 				_putchar(',');
-				_putchar(' ');
 			}
 		}
 		else
 		{
-			_putchar('0' + ones);
-			if (v != 9)
+			if (v != 0)
 			{
-				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 			}
+			_putchar('0' + ones);
+			_putchar(',');
 		}
 		v++;
 		if (v == 10)
