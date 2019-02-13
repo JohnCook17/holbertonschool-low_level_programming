@@ -12,13 +12,13 @@ int main(void)
 	long int n2;
 	unsigned long long int res;
 
-	for (i = 0, n1 = 0, n2 = 1; i <= 50; i++)
+	for (i = 0, n1 = 0, n2 = 1; i < 49; i++)
 	{
 		res = n1 + n2;
 		n1 = n2;
 		n2 = res;
 		printf("%llu", res);
-		if (i < 50)
+		if (i < 49)
 		{
 			printf(", ");
 		}
