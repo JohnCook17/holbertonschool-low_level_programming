@@ -13,7 +13,7 @@ int _isupper(int c)
 
 	p = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-	for (i = 0; i <= 26; i++)
+	for (i = 0; i < 26; i++)
 	{
 		if (c  == p[i])
 		{
