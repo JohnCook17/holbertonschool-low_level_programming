@@ -1,5 +1,9 @@
 #include "holberton.h"
-
+/**
+ * print_line - prints a line n long.
+ * @n: the lenght of the line to print.
+ *
+ */
 void print_line(int n)
 {
 	int i;
