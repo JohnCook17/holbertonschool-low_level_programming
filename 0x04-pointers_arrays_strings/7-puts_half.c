@@ -13,7 +13,7 @@ void puts_half(char *str)
 	{
 		i++;
 	}
-	if ( i % 2 != 0)
+	if (i % 2 != 0)
 	{
 		while (j < i)
 		{
@@ -26,7 +26,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		while(j < i)
+		while (j < i)
 		{
 			if (j >= i / 2)
 			{
