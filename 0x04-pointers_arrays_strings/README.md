@@ -1,0 +1,1 @@
+Read me for 0x04 - pointers, arrays and strings
