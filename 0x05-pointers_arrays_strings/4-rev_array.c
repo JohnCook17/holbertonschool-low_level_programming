@@ -13,7 +13,7 @@ void rev(int *a, int n)
 	int c;
 
 	c = a[i];
-	if (i == n)
+	if (i == n || n == 0)
 	{
 		return;
 	}
