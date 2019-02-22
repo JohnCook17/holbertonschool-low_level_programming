@@ -1,5 +1,10 @@
 #include "holberton.h"
-
+/**
+ * leet - 1337 s34k
+ * @s: string to leet speak
+ *
+ * Return: returns the leet speak of the string.
+ */
 char *leet(char *s)
 {
 	char *letter = "aAeEoOtTlL";
