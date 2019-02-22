@@ -1,28 +1,5 @@
 #include "holberton.h"
-/**
- * rev - reverse a array
- * @a: array
- * @n: size of array
- *
- * Return: to keep in the array, if no return segmentation fault
- */
-void rev(int *a, int n)
-{
-	static int i;
-	static int j;
-	int c;
 
-	c = a[i];
-	if (i == n || n == 0)
-	{
-		return;
-	}
-	i++;
-	rev(a, n);
-	i--;
-	a[j] = c;
-	j++;
-}
 /**
  * reverse_array - reverse an array
  * @a: array
@@ -31,5 +8,16 @@ void rev(int *a, int n)
  */
 void reverse_array(int *a, int n)
 {
-	rev(a, n);
+	int c;
+	int i = 0;
+	int j = n - 1;
+
+	while (i < j)
+	{
+		c = a[i];
+		a[i] = a[j];
+		a[j] = c;
+		i++;
+		j--;
+	}
 }
