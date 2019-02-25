@@ -31,10 +31,10 @@ char *_strstr(char *haystack, char *needle)
 		{
 			return (&haystack[i - j + 1]);
 		}
-		if (match == 1)
-		{
-			return ('\0');
-		}
+	}
+	if (needle == '\0')
+	{
+		return (&haystack[0]);
 	}
 	return ('\0');
 }
