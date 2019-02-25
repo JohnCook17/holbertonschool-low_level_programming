@@ -29,7 +29,11 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (match == 0)
 		{
-			return(&haystack[i - j + 1]);
+			return (&haystack[i - j + 1]);
+		}
+		if (match == 1)
+		{
+			return ('\0');
 		}
 	}
 	return ('\0');
