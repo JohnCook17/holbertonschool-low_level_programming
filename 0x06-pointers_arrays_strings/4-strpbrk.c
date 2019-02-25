@@ -4,7 +4,7 @@
  * @s: string
  * @accept: chars to find in string
  *
- * Return: returns address of string where first match is found, no match = null
+ * Return: return address of string where first match is found, no match = null
  */
 char *_strpbrk(char *s, char *accept)
 {
