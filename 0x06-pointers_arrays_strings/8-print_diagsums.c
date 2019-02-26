@@ -23,5 +23,5 @@ void print_diagsums(int *a, int size)
 		num = a + (size - 1) * row;
 		numsum += *num;
 	}
-	printf("%d \n", numsum);
+	printf("%d\n", numsum);
 }
