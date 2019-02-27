@@ -1,21 +1,31 @@
 #include "holberton.h"
 /**
- * _print_rev_recursion - prints a string in rev
- * @s: string
+ * helper - helper function
+ * @s: string to reverse
+ * @i: index
  *
  * Return: used to break only
  */
-void _print_rev_recursion(char *s)
+void helper(char *s, int i)
 {
-	static int i;
-
 	if (s[i] == '\0')
 	{
-		i--;
 		return;
 	}
 	i++;
-	_print_rev_recursion(s);
-	_putchar(s[i]);
+	helper(s, i);
+	_putchar(s[i - 1]);
 	i--;
+}
+
+/**
+ * _print_rev_recursion - prints a string in rev
+ * @s: string
+ *
+ */
+void _print_rev_recursion(char *s)
+{
+	int i = 0;
+
+	helper(s, i);
 }
