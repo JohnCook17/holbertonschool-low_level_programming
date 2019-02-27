@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-void helper(s)
+void helper(char *s)
 {
         static int i;
 
