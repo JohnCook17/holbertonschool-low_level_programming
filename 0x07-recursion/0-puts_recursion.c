@@ -2,6 +2,7 @@
 /**
  * helper - helper function
  * @s: string
+ * @i: iterator
  *
  * Return: used to terminate.
  */
@@ -14,7 +15,7 @@ void helper(char *s, int i)
 	}
 	_putchar(s[i]);
 	i++;
-	helper (s, i);
+	helper(s, i);
 }
 
 /**
@@ -26,5 +27,6 @@ void helper(char *s, int i)
 void _puts_recursion(char *s)
 {
 	int i = 0;
+
 	helper(s, i);
 }
