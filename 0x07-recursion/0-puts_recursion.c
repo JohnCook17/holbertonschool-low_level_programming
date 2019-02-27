@@ -1,17 +1,20 @@
 #include "holberton.h"
-
-void helper(char *s)
+/**
+ * helper - helper function
+ * @s: string
+ *
+ * Return: used to terminate.
+ */
+void helper(char *s, int i)
 {
-        static int i;
-
-        if (s[i] == '\0')
-        {
-                _putchar('\n');
-                return;
-        }
-        _putchar(s[i]);
-        i++;
-        _puts_recursion(s);
+	if (s[i] == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(s[i]);
+	i++;
+	helper (s, i);
 }
 
 /**
@@ -22,5 +25,6 @@ void helper(char *s)
  */
 void _puts_recursion(char *s)
 {
-	helper(s);
+	int i = 0;
+	helper(s, i);
 }
