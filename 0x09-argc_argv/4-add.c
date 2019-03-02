@@ -24,11 +24,8 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		num = atoi(argv[i]);
-		printf("num = %d\n", num);
-		printf("isdigit test\n");
 		if (num)
 		{
-			printf("before sum\n");
 			sum += num;
 		}
 		else
