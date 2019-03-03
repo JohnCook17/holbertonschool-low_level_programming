@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (atoi(argv[1]) < 0)
+	if (atoi(argv[1]) <= 0)
 		printf("0\n");
 	if (atoi(argv[1]) / 25 > 0)
 		coins += atoi(argv[1]) / 25;
