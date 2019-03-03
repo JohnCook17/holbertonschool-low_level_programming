@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "holberton.h"
 
-#define UNUSED(x) (void)(x)
 /**
  * main - main
  * @argc: the number of char strings passed to main
@@ -21,7 +20,6 @@ int main(int argc, char *argv[])
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
-	UNUSED(argc);
 	printf("%i\n", num1 * num2);
 	return (0);
 }
