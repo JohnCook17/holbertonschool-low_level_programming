@@ -18,6 +18,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
 	while (s1[i] != '\0')
 	{
 		p[i] = s1[i];
