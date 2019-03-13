@@ -4,7 +4,7 @@
 /**
  * main - controlls the function calls
  * @argc: the number of args must be 4
- * @argv the arguments the user supplies
+ * @argv: the arguments the user supplies
  *
  * Return: 0
  */
