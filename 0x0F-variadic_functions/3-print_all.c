@@ -49,20 +49,16 @@ void print_all(const char * const format, ...)
  * @t: char type
  * @func: function to call
  */
-	struct form
-	{
-		char t;
-		void (*func)(va_list);
-	};
-	struct form type[] = {
+
+	form type[] = {
 		{'c', printchar},
 		{'i', printint},
 		{'f', printfloat},
 		{'s', printstring}
 	};
 	int i = 0;
-	va_list statment;
 	int j = 0;
+	va_list statment;
 	char *sep = "";
 
 	va_start(statment, format);
