@@ -51,10 +51,11 @@ void print_all(const char * const format, ...)
  */
 
 	form type[] = {
-		{'c', printchar},
-		{'i', printint},
-		{'f', printfloat},
-		{'s', printstring}
+		{"c", printchar},
+		{"i", printint},
+		{"f", printfloat},
+		{"s", printstring},
+		{NULL, NULL}
 	};
 	int i = 0;
 	int j = 0;
@@ -64,9 +65,9 @@ void print_all(const char * const format, ...)
 	va_start(statment, format);
 	while (format[j] != '\0')
 	{
-		while (i < 4)
+		while (type[i].t)
 		{
-			if (format[j] == type[i].t)
+			if (format[j] == *type[i].t)
 			{
 				printf("%s", sep);
 				type[i].func(statment);
