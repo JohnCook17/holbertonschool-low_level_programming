@@ -31,12 +31,15 @@ void printfloat(va_list s)
  */
 void printstring(va_list s)
 {
-	if (s == NULL)
+	char *strg;
+
+	strg = va_arg(s, char *);
+	if (strg == NULL)
 	{
 		printf("(nil)");
 		return;
 	}
-	printf("%s", va_arg(s, char *));
+	printf("%s", strg);
 }
 /**
  * print_all - prints chars, ints floats, strings
