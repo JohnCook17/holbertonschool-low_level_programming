@@ -47,12 +47,6 @@ void printstring(va_list s)
  */
 void print_all(const char * const format, ...)
 {
-/**
- * struct form - matches format and allows the call of the proper func
- * @t: char type
- * @func: function to call
- */
-
 	form type[] = {
 		{"c", printchar},
 		{"i", printint},
