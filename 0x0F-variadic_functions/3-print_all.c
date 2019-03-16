@@ -60,6 +60,7 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	va_list statment;
 	int j = 0;
+	char *sep = "";
 
 	va_start(statment, format);
 	while (format[j] != '\0')
@@ -68,9 +69,9 @@ void print_all(const char * const format, ...)
 		{
 			if (format[j] == type[i].t)
 			{
+				printf("%s", sep);
 				type[i].func(statment);
-				if (format[j + 1] != '\0')
-					printf(", ");
+				sep = ", ";
 			}
 			i++;
 		}
