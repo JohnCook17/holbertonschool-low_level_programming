@@ -6,15 +6,15 @@
 #include <stdlib.h>
 
 /**
- * struct form - matches format and allows the call of the proper func
+ * struct forms - matches format and allows the call of the proper func
  * @t: char type
  * @func: function to call
  */
-typedef struct form
+typedef struct forms
 {
 	char *t;
 	void (*func)(va_list statment);
-}form;
+} form;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
