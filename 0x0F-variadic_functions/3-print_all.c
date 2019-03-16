@@ -23,7 +23,7 @@ void printint(va_list s)
  */
 void printfloat(va_list s)
 {
-	printf("%lf", va_arg(s, double));
+	printf("%f", va_arg(s, double));
 }
 /**
  * printstring - prints a string
