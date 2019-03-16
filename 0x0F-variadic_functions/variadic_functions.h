@@ -13,7 +13,7 @@
 typedef struct form
 {
 	char *t;
-	void (*func)(va_list);
+	void (*func)(va_list statment);
 }form;
 
 int sum_them_all(const unsigned int n, ...);
