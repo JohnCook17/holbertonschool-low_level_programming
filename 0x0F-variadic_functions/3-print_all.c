@@ -60,7 +60,7 @@ void print_all(const char * const format, ...)
 	char *sep = "";
 
 	va_start(statment, format);
-	while (format[j] != '\0')
+	while (format && format[j] != '\0')
 	{
 		while (type[i].t)
 		{
