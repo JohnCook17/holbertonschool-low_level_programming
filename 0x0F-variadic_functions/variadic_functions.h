@@ -10,11 +10,11 @@
  * @t: char type
  * @func: function to call
  */
-struct form
+typedef struct form
 {
-	char t;
+	char *t;
 	void (*func)(va_list);
-};
+}form;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
