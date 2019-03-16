@@ -32,7 +32,10 @@ void printfloat(va_list s)
 void printstring(va_list s)
 {
 	if (s == NULL)
+	{
 		printf("(nil)");
+		return;
+	}
 	printf("%s", va_arg(s, char *));
 }
 /**
