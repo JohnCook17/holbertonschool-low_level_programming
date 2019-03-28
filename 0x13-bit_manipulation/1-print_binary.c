@@ -1,10 +1,8 @@
 #include "holberton.h"
 
-
 /**
- * print_binary -
- *
- * Return: 
+ * print_binary - takes a dec number and makes it binary
+ * @n: the base 10 number to convert and print
  */
 void print_binary(unsigned long int n)
 {
