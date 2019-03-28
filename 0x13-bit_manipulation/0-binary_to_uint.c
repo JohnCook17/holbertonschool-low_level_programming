@@ -39,6 +39,8 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int n, digit, dec = 0, i = 0;
 
+	if (!b)
+		return (0);
 	n = _atoi(b);
 	while (n != 0)
 	{
