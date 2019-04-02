@@ -1,9 +1,11 @@
 #include "holberton.h"
 
 /**
- * create_file -
+ * create_file - creates a file with certain permissions
+ * @filename: filename
+ * @text_content: content to write to the file
  *
- * Return: 
+ * Return: -1 if failure, 1 otherwise
  */
 int create_file(const char *filename, char *text_content)
 {
@@ -17,5 +19,6 @@ int create_file(const char *filename, char *text_content)
 	if (o == -1)
 		return (-1);
 	write(o, text_content, size);
+	close(o);
 	return (1);
 }
