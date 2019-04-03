@@ -17,15 +17,15 @@ int main(int argc, char **argv)
 		exit(97);
 	}
 	readfrom = open(argv[1], O_RDONLY);
-	if (!argv[1] || readfrom == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
 	writeto = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	while (rstatus)
 	{
 		rstatus = read(readfrom, buf, 1024);
+		if (rstatus == -1 || !argv[1] || readfrom == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		}
 		wstatus = write(writeto, buf, rstatus);
 		if (wstatus == -1 || writeto == -1)
 		{
