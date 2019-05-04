@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * dlistint_len -
+ * dlistint_len - finds the length of the doubly linked list.
+ * @h: the head of the doubly linked list
  *
- * Return: 
+ * Return: The length of the doubly linked list
  */
 size_t dlistint_len(const dlistint_t *h)
 {
@@ -15,5 +16,5 @@ size_t dlistint_len(const dlistint_t *h)
 		current = current->next;
 		i++;
 	}
-	return i;
+	return (i);
 }
