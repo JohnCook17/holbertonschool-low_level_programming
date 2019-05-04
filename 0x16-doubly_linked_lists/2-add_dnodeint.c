@@ -1,9 +1,11 @@
 #include "lists.h"
 
 /**
- * add_dnodeint -
+ * add_dnodeint - adds a node to the start of a doubly linked list
+ * @head: the head of the doubly linked list
+ * @n: the value of the new node
  *
- * Return: 
+ * Return: NULL if malloc fails, else newnode
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
