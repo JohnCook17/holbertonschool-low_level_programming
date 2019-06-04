@@ -9,6 +9,8 @@ void hash_table_print(const hash_table_t *ht)
 	int first = 1;
 	hash_node_t *node;
 
+	if (!ht)
+		return;
 	printf("{");
 	while (i < ht->size)
 	{
