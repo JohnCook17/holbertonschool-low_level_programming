@@ -56,12 +56,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	node->value = strdup(value);
 	if (node->value == NULL)
-		free (node);
+		free(node);
 	node->key = strdup(key);
 	if (node->key == NULL)
 	{
-		free (node);
-		free (node->value);
+		free(node);
+		free(node->value);
 	}
 	add_node(ht, node);
 	return (1);
