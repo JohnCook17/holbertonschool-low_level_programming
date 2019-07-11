@@ -8,13 +8,13 @@ all: $(OBJ)
 	$(CC) $(SRC) -o $(NAME)
 
 clean:
-	$(RM) *~ holberton
+	$(RM) *~ $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
 fclean:
-	$(RM) *~ holberton $(OBJ)
+	$(RM) *~ $(NAME) $(OBJ)
 	
 
 .PHONY re:
