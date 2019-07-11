@@ -1,2 +1,2 @@
 all:
-	gcc -o holberton *.c
+	gcc *.c -o holberton 
