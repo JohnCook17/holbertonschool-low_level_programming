@@ -22,6 +22,4 @@ def island_perimeter(grid):
                     touching += 1
             location += 1
         gridrow += 1
-        print(land)
-        print(touching)
     return land * 4 - touching
