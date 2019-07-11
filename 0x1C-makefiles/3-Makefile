@@ -13,8 +13,9 @@ clean:
 oclean:
 	$(RM) $(OBJ)
 
-fclean: clean oclean
+fclean:
+	$(RM) *~ holberton $(OBJ)
 	
 
-.PHONY re: all
-	
+.PHONY re:
+	$(CC) $(SRC) -o $(NAME)
