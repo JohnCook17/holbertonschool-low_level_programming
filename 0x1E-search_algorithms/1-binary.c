@@ -1,10 +1,15 @@
 #include "search_algos.h"
-
+/**
+ * print_array - prints the array
+ * @array: the array to print
+ * @r: the right end of the array
+ * @l: the left end of the array
+ */
 void print_array(int *array, size_t r, size_t l)
 {
 	size_t i = l;
 
-	while (i < r)
+	while (i <= r)
 	{
 		if (i == l)
 			printf("Searching in array: %d", array[i]);
@@ -14,39 +19,37 @@ void print_array(int *array, size_t r, size_t l)
 	}
 	printf("\n");
 }
-int my_binary_search(int *array, size_t l, size_t r, int value)
+/**
+ * binary_search - binary search algo
+ * @array: the array to print
+ * @size: the size of the array
+ * @value: the value to find
+ * Return: the index of the array the value is located at
+ */
+int binary_search(int *array, size_t size, int value)
 {
-	size_t m = l + (r - l) / 2;
+	size_t r = size - 1;
+	size_t l = 0;
+	size_t m;
 
-	if (r > l)
+	if (array == NULL)
+		return (-1);
+	while (l <= r)
 	{
+		print_array(array, r, l);
+		m = (l + r) / 2;
 		if (array[m] == value)
 		{
-			printf("found value\n");
-			print_array(array, r, l);
-			printf("returning now\n");
 			return (m);
 		}
 		else if (array[m] < value)
 		{
-			print_array(array, r, l);
-			return (my_binary_search(array, m + 1, r, value));
+			l = m + 1;
 		}
-		else if (array[m] > value)
+		else
 		{
-			print_array(array, r, l);
-			return (my_binary_search(array, l, m - 1, value));
+			r = m - 1;
 		}
 	}
 	return (-1);
-}
-int binary_search(int *array, size_t size, int value)
-{
-	size_t r = size;
-	size_t l = 0;
-
-	if (array == NULL)
-		return (-1);
-	return (my_binary_search(array, l, r, value));
-
 }
